@@ -13,3 +13,34 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  text-align: center;
+  background-color: black;
+  color: yellow;
+}
+
+a {
+  color: skyblue;
+}
+
+a:visited {
+  color: hotpink;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  border: 3px yellow solid;
+  border-radius: 3px;
+  margin: 1em;
+  width: 30%
+}
+
+.errors {
+  color: red;
+}

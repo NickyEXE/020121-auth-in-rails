@@ -1,0 +1,17 @@
+<%= form_with(model: post) do |form| %>
+  <%= render partial: "layouts/record_errors", locals: {record: post} %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :content %>
+    <%= form.text_area :content %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -2,6 +2,10 @@
 
 ![](https://media.giphy.com/media/y0s36prnnGb5u/giphy.gif)
 
+## Make sure your app has the following ENV variables in a dotenv file in your root directory:
+GOOGLE_CLIENT_ID=YOUR CLIENT ID
+GOOGLE_CLIENT_SECRET=YOUR SECRET
+
 ## Objectives
 
 - Understand, theoretically, how authentication and authorization work

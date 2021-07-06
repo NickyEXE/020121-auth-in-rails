@@ -1,6 +1,7 @@
 <nav>
 <% if logged_in? %>
-  <h1>Welcome <%= current_user.username %></h1>
+  <h1>Welcome <%= link_to current_user.username, current_user %></h1>
+  <%= link_to "See All Posts", posts_path %> |
   <%= link_to "Logout", login_path, method: "delete" %>
 <% else %>
   <%= link_to "Sign Up!", new_user_path %>

@@ -1,11 +1,8 @@
 Rails.application.routes.draw do
-  resources :users
+  devise_for :users
   resources :likes
   resources :posts
-  get "/login", to: "sessions#new", as: "login"
-  resources :sessions, only: [:create]
-  # post "/sessions", to: "sessions#create", as: "sessions"
-  delete "/login", to: "sessions#destroy"
+  root to: "posts#index"
 
   # get "/sessions/new", to: "sessions#new", as: "login"
   # delete "/sessions", to: "sessions#destroy"

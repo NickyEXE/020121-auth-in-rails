@@ -1,9 +1,8 @@
 <nav>
-<% if logged_in? %>
-  <h1>Welcome <%= current_user.username %></h1>
-  <%= link_to "Logout", login_path, method: "delete" %>
+<% if user_signed_in? %>
+  <h1>Welcome <%= current_user.email %></h1>
+  <%= link_to "Logout", destroy_user_session_path, method: "delete" %>
 <% else %>
-  <%= link_to "Sign Up!", new_user_path %>
+  <%= link_to "Sign Up!", new_user_registration_path %>
 <% end %>
-
 </nav>
